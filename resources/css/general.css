@@ -1,0 +1,204 @@
+:root {
+    --primary-color: #0eecae;
+}
+
+body {
+    background-color: #010311 !important;
+}
+/* hero section styles */
+
+.hero-video-wrapper {
+    height: 510px;
+}
+.hero-video-wrapper video {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* header section styles */
+
+.header-item {
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+}
+@media (max-width: 992px) {
+    .navbar-nav {
+        background-color: #040724;
+        padding: 7px 15px !important;
+        margin-top: 20px;
+        border-radius: 12px;
+        position: relative;
+        z-index: 1;
+    }
+    .navbar-nav::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: blur(3px); /* Adjust the blur to your liking */
+        background: linear-gradient(
+            93.35deg,
+            #e800e8 9.74%,
+            #2b48d8 61.61%,
+            #0993d9 103.98%
+        );
+        border-radius: 12px;
+    }
+    .header-item {
+        margin: 15px 0;
+    }
+}
+.special-btn-hover {
+    transition: all 0.1s ease-in;
+}
+.special-btn-hover:hover {
+    background-image: linear-gradient(
+        93.35deg,
+        #e800e8 9.74%,
+        #2b48d8 61.61%,
+        #0993d9 103.98%
+    );
+    border: 2px solid #2b48d8a8 !important;
+}
+
+/* gaint button style */
+.gaint-btn {
+    padding: 35px 80px;
+    background-image: linear-gradient(
+        93.35deg,
+        #e800e8 9.74%,
+        #2b48d8 61.61%,
+        #0993d9 103.98%
+    );
+}
+@media (max-width: 768px) {
+    .gaint-btn {
+        padding: 20px 40px;
+    }
+}
+/* gradient divider styles */
+.gradient-divider {
+    height: 10px;
+    background-image: linear-gradient(
+        93.35deg,
+        #e800e8 9.74%,
+        #2b48d8 61.61%,
+        #0993d9 103.98%
+    );
+    margin-top: 80px;
+}
+
+/* keynotes section styles */
+.keynotes-text {
+    background-color: #040724;
+}
+
+/* gradient link border styles */
+.gradient-border-bottom {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* expert insight section  */
+.expert-insight-section {
+    background-color: #000;
+}
+
+/* swiper styles */
+.swiper {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.slider-card {
+    background-color: #040724;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    height: 50px !important;
+    width: 50px !important;
+    background-color: #161e2d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 17px !important;
+    color: white;
+}
+
+.swiper-button-next[aria-disabled="false"],
+.swiper-button-prev[aria-disabled="false"] {
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+.swiper-button-next[aria-disabled="false"]::after,
+.swiper-button-prev[aria-disabled="false"]::after {
+    color: var(--primary-color);
+}
+.swiper-button-next[aria-disabled="false"]:hover,
+.swiper-button-prev[aria-disabled="false"]:hover {
+    background-color: var(--primary-color);
+}
+.swiper-button-next[aria-disabled="false"]:hover::after,
+.swiper-button-prev[aria-disabled="false"]:hover::after {
+    color: black;
+}
+
+/* footer section styles */
+.footer-section {
+    background-color: #040724;
+}
+
+/* input styles */
+.myInput {
+    height: 37px;
+    border: 1px solid var(--primary-color) !important;
+}
+
+/* dropdown styles */
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #000;
+    width: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.575);
+}
+.myDropDown:hover .dropdownContent {
+    display: block !important;
+}
+.dropdown-item {
+    padding: 10px 9px !important;
+    border: 1px solid rgba(128, 128, 128, 0.575) !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color) !important;
+}
+
+.dropdown-item:hover a {
+    color: black !important;
+}
+
+.w-200px {
+    width: 200px;
+}

@@ -1,0 +1,101 @@
+/* Installing fonts */
+@font-face {
+    font-family: amazon-ember-bold;
+    src: url("/public/assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Bold.ttf")
+        format("truetype");
+}
+@font-face {
+    font-family: amazon-ember-medium;
+    src: url("/public/assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Medium.ttf")
+        format("truetype");
+}
+@font-face {
+    font-family: amazon-ember-mono;
+    src: url("/public/assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Mono.ttf")
+        format("truetype");
+}
+@font-face {
+    font-family: amazon-ember-display;
+    src: url("/public/assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Heavy.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: amazon-ember-light;
+    src: url("/public/assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Thin.ttf")
+        format("truetype");
+}
+
+:root {
+    --font-heading: amazon-ember-bold, sans-serif;
+    --font-body: amazon-ember-medium, sans-serif;
+    --font-mono: amazon-ember-mono, monospace;
+    --font-display: amazon-ember-display, serif;
+    --font-thin: amazon-ember-light, serif;
+}
+
+/* General font classes */
+.font-heading {
+    font-family: var(--font-heading, "Montserrat", sans-serif) !important;
+    /* Default to Montserrat */
+}
+
+.font-body {
+    font-family: var(--font-body, "Arial", sans-serif);
+    /* Default to Arial */
+}
+
+.font-mono {
+    font-family: var(--font-mono, "Courier New", monospace);
+    /* Default to a monospaced font */
+}
+
+.font-display {
+    font-family: var(--font-display, "Georgia", serif);
+    /* Default to a serif display font */
+}
+.font-thin {
+    font-family: var(--font-thin, "Arial", serif);
+    /* Default to a serif display font */
+}
+
+/* Font size classes */
+.text-sm {
+    font-size: 0.875rem; /* Small text */
+}
+
+.text-base {
+    font-size: 1rem; /* Regular body text */
+}
+
+.text-lg {
+    font-size: 1.25rem; /* Large text */
+}
+
+.text-xl {
+    font-size: 1.5rem; /* Extra large text */
+}
+
+.text-2xl {
+    font-size: 2rem; /* Huge text for headings */
+}
+
+/* Font weight classes */
+.font-light {
+    font-weight: 300; /* Light */
+}
+
+.font-regular {
+    font-weight: 400; /* Regular */
+}
+
+.font-medium {
+    font-weight: 500; /* Medium */
+}
+
+.font-bold {
+    font-weight: 700; /* Bold */
+}
+
+.font-black {
+    font-weight: 900; /* Extra bold or black */
+}
